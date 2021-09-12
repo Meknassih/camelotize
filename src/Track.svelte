@@ -1,0 +1,32 @@
+<script>
+	import { tracks } from "./stores";
+	export let trackName, trackKey;
+
+	function removeTrack() {
+		tracks.update((prev) =>
+			prev.filter((element) => element.trackName != trackName)
+		);
+	}
+</script>
+
+<div class="flex flex-1 flex-row flex-nowrap gap-4 mx-auto">
+	<input
+		disabled
+		class="border border-solid border-gray-300 rounded-md w-3/5 p-2 shadow"
+		type="text"
+		bind:value={trackName}
+	/>
+	<input
+		disabled
+		class="border border-solid border-gray-300 rounded-md w-1/5 p-2 shadow"
+		type="text"
+		bind:value={trackKey}
+	/>
+	<button
+		class="border border-solid border-gray-300 rounded-md w-auto p-2 shadow"
+		on:click={removeTrack}>-</button
+	>
+</div>
+
+<style>
+</style>
