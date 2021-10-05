@@ -4,6 +4,7 @@
 	import { tracks, solutions } from "./stores";
 	import SolutionTracklist from "./SolutionTracklist.svelte";
 	import Hero from "./Hero.svelte";
+	import Foot from "./Foot.svelte";
 
 	function findSolutions() {
 		fetch(
@@ -51,6 +52,7 @@
 		</div>
 		<SolutionTracklist />
 	</div>
+	<Foot />
 </main>
 
 <style>
