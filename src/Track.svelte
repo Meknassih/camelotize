@@ -14,7 +14,9 @@
 <div class="flex flex-1 flex-row flex-nowrap gap-4 mx-auto">
 	<input
 		disabled
-		class="border border-solid border-gray-300 rounded-xl w-3/5 p-2 shadow"
+		class="border border-solid border-gray-300 rounded-xl {hasDeleteButton
+			? 'w-3/5'
+			: 'w-4/5'} p-2 shadow"
 		type="text"
 		bind:value={trackName}
 	/>

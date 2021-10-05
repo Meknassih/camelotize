@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="container bg-indigo-50 rounded-2xl text-indigo-900">
+<div class="container bg-indigo-50 rounded-2xl text-indigo-800 font-semibold">
 	<div
 		class="grid sm:grid-flow-col grid-cols-1 sm:grid-rows-3 sm:grid-cols-2 m-4 md:m-8"
 	>
