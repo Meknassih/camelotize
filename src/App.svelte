@@ -47,7 +47,7 @@
 		<Tracklist />
 		<div class="container flex justify-center m-8">
 			<button
-				class="px-6 py-3 border-b-4 hover:bg-indigo-600 border-indigo-700 bg-indigo-500 text-white font-bold rounded-xl p-2 hover:shadow"
+				class="px-6 py-3 border-b-4 hover:bg-indigo-600 border-indigo-700 bg-indigo-500 text-white font-semibold rounded-xl p-2 hover:shadow"
 				on:click={findSolutions}>Find solutions</button
 			>
 		</div>

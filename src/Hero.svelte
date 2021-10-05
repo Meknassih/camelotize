@@ -1,11 +1,11 @@
 <script>
 </script>
 
-<div class="container bg-indigo-50 rounded-2xl text-indigo-800 font-semibold">
+<div class="container bg-indigo-50 rounded-2xl text-indigo-800 font-medium">
 	<div
 		class="grid sm:grid-flow-col grid-cols-1 sm:grid-rows-3 sm:grid-cols-2 m-4 md:m-8"
 	>
-		<h2 class="text-xl font-bold text-indigo-600 p-2">
+		<h2 class="text-xl font-semibold text-indigo-600 p-2">
 			Reorder your tracks in a harmonic tracklist
 		</h2>
 		<p class="p-2 text-justify">
