@@ -11,7 +11,7 @@
 				class="flex flex-1 flex-col flex-nowrap gap-4 mx-4 md:mx-8 py-8"
 			>
 				{#each solution as track}
-					<Track {...track} />
+					<Track {...track} hasDeleteButton={false} />
 				{/each}
 			</div>
 		{/each}

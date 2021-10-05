@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from "svelte";
 	import Head from "./Head.svelte";
 	import Tracklist from "./Tracklist.svelte";
 	import { tracks, solutions } from "./stores";
@@ -46,7 +47,7 @@
 		<Tracklist />
 		<div class="container flex justify-center m-8">
 			<button
-				class="border border-solid border-gray-300 rounded-md p-2 shadow"
+				class="px-6 py-3 border-b-4 hover:bg-indigo-400 border-indigo-300 bg-indigo-500 text-white font-bold rounded-xl p-2 hover:shadow"
 				on:click={findSolutions}>Find solutions</button
 			>
 		</div>

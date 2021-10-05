@@ -1,6 +1,8 @@
 <script>
 	import { tracks } from "./stores";
-	export let trackName, trackKey;
+	export let trackName,
+		trackKey,
+		hasDeleteButton = true;
 
 	function removeTrack() {
 		tracks.update((prev) =>
@@ -12,20 +14,22 @@
 <div class="flex flex-1 flex-row flex-nowrap gap-4 mx-auto">
 	<input
 		disabled
-		class="border border-solid border-gray-300 rounded-md w-3/5 p-2 shadow"
+		class="border border-solid border-gray-300 rounded-xl w-3/5 p-2 shadow"
 		type="text"
 		bind:value={trackName}
 	/>
 	<input
 		disabled
-		class="border border-solid border-gray-300 rounded-md w-1/5 p-2 shadow"
+		class="border border-solid border-gray-300 rounded-xl w-1/5 p-2 shadow"
 		type="text"
 		bind:value={trackKey}
 	/>
-	<button
-		class="border border-solid border-gray-300 rounded-md w-auto p-2 shadow"
-		on:click={removeTrack}>-</button
-	>
+	{#if hasDeleteButton}
+		<button
+			class="border-2 border-solid border-pink-500 hover:bg-pink-100 rounded-xl h-10 w-10"
+			on:click={removeTrack}
+			><i class="text-pink-500 text-lg ri-delete-bin-7-line" /></button
+		>{/if}
 </div>
 
 <style>
