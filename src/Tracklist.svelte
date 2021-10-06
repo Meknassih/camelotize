@@ -4,7 +4,9 @@
 	import { tracks } from "./stores";
 </script>
 
-<div class="container flex flex-1 flex-col flex-nowrap gap-4">
+<div
+	class="container flex flex-1 flex-col flex-nowrap gap-4 border rounded-xl border-gray-300 p-4 w-auto"
+>
 	{#each $tracks as track}
 		<Track {...track} />
 	{/each}
