@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="container flex flex-1 flex-col flex-nowrap gap-4 border rounded-xl border-gray-300 p-4 w-auto"
+	class="container flex flex-1 flex-col flex-nowrap gap-4 border rounded-xl border-gray-300 p-4"
 >
 	{#each $tracks as track}
 		<Track {...track} />
